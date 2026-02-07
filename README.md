@@ -9,15 +9,7 @@ A revolutionary "No-DB" e-commerce platform architected by **Adewole Felix Bamid
 
 ## 🏗️ System Architecture
 
-```mermaid
-graph LR
-    A[React Frontend] <-->|JSON Fetch| B(Google Sheets API v4)
-    B <-->|Real-Time Sync| C[(Master Inventory Sheet)]
-    A -->|State Mgmt| D{Redux Toolkit}
-    D -->|Checkout Action| E[WhatsApp Business API]
-    E -->|Order Details| F[Sales Agent Device]
-
-    🛠️ Technical Know-How
+##     🛠️ Technical Know-How
 1. The "Google Sheets as Backend" Strategy
 API Wrapper: I built a custom adapter that fetches sheet data (Products, Categories, Prices) and converts it into a clean JSON object for the React frontend to consume.
 
@@ -32,3 +24,12 @@ Result: This removes friction, allowing customers to negotiate and confirm order
 Built with a Mobile-First grid using Tailwind CSS, ensuring the "Product Cards" and "Cart Drawer" perform natively on Android and iOS devices.
 
 Architected by: Adewole Felix Bamidele Master's Degree (2015) | Solutions Architect
+
+```mermaid
+graph LR
+    A[React Frontend] <-->|JSON Fetch| B(Google Sheets API v4)
+    B <-->|Real-Time Sync| C[(Master Inventory Sheet)]
+    A -->|State Mgmt| D{Redux Toolkit}
+    D -->|Checkout Action| E[WhatsApp Business API]
+    E -->|Order Details| F[Sales Agent Device]
+
